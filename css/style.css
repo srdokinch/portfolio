@@ -1,0 +1,52 @@
+a {
+  font-size: 50px;
+  text-decoration: none;
+  -webkit-transition: 1.0s;
+  transition: 1.0s;
+}
+
+.main p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 600px;
+  color: #d1dee0;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 10%;
+  line-height: 80px;
+  font-weight: bold;
+}
+.main .name {
+  color: black;
+  font-weight: bold;
+}
+.main .coder {
+  color: #92de4f;
+}
+
+.html {
+  color: #f42900;
+}
+
+.css {
+  color: #006eba;
+}
+
+.js {
+  color: #f5be18;
+}
+
+.websites {
+  color: #6fbef7;
+}
+
+.appeal {
+  color: #e12e8d;
+}
+
+.fin {
+  color: #20268f;
+}
+
+/*# sourceMappingURL=style.css.map */

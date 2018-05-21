@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.inview-master/jquery.inview.js">
+    </script>
+    <title>Ryoichi's portfolio
+    </title>
+  </head>
+  <body>
+    <nav class="globalMenuSp">
+      <ul>
+          <li><a href="#">Menu1</a></li>
+          <li><a href="#">Menu2</a></li>
+          <li><a href="#">Menu3</a></li>
+          <li><a href="#">Menu4</a></li>
+          <li><a href="#">Menu5</a></li>
+      </ul>
+    </nav>
+    <div class="navToggle">
+    <span></span><span></span><span></span><span>menu</span>
+    </div>
+    <div class="header">
+      <i class="fas fa-laptop"></i>
+      <p>My portfolio</p>
+    </div>
+    <div class="header_photo">
+      <img src="images/header.jpg">
+    </div>
+    <div class="two_columnBox">
+      <div class="columnBox column01">
+      </div>
+      <div class="columnBox column02">
+        <div class="text">
+          <h1>
+            <ruby>
+              坂<rt>さか</rt>上<rt>がみ</rt>　
+              涼<rt>　りょう</rt>一<rt>いち</rt>
+            </ruby>
+          </h1>
+          <p>
+            スキル : HTML,CSS,JavaScript
+          </p>
+          <a class="works" href="#work01">作品集
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <h2>作品集</h2>
+    <ul class="list">
+      <li class="list-mv07">
+        <a href="http://ysd-lab.jp/wdc2016/h2/index.html" target="_blank">
+          <img src="images/img1.jpg" alt="フォトペアーの写真">
+        </a>
+      </li>
+      <p>
+        この作品は2016年に制作しました。
+        <br>
+        制作時間は約20時間です。
+        <br>
+        デザイナー1人とコーダー2人で制作しました。
+        <br>
+        使用技術はHTML,CSS,jQuery,Instagram APIです。
+      </p>
+    </ul>
+    <ul class="list">
+      <li class="list-mv07">
+        <a href="http://www01.do-johodai.ac.jp/wdc/workshop/iWDC2016_workshop/G1/" target="_blank">
+          <img src="images/img2.jpg" alt="タイコラボの写真">
+        </a>
+      </li>
+      <p>
+        この作品は2016年に制作しました。
+        <br>
+        制作時間は約20時間です。
+        <br>
+        デザイナー2人とコーダー2人で制作しました。
+      </p>
+    </ul>
+    <ul class="list">
+      <li class="list-mv07">
+        <a href="http://www01.do-johodai.ac.jp/wdc/workshop/iWDC2016_workshop/G1/" target="_blank">
+          <img src="images/img2.jpg" alt="タイコラボの写真">
+        </a>
+      </li>
+      <p>
+        この作品は2016年に制作しました。
+        <br>
+        制作時間は約20時間です。
+        <br>
+        デザイナー2人とコーダー2人で制作しました。
+      </p>
+    </ul>
+  </div>
+    <!-- <div id="work01" class="work">
+<a href="http://ysd-lab.jp/wdc2016/h2/index.html" target="_blank"><img src="images/img1.jpg" alt="フォトペアーの写真"></a>
+<p>
+この作品は2016年に制作しました。<br>
+制作時間は約20時間です。<br>
+デザイナー1人とコーダー2人で制作しました。<br>
+使用技術はHTML,CSS,jQuery,Instagram APIです。
+</p>
+</div>
+<div id="work02" class="work">
+<a href="http://www01.do-johodai.ac.jp/wdc/workshop/iWDC2016_workshop/G1/" target="_blank"><img src="images/img2.jpg" alt="タイコラボの写真"></a>
+<p>
+この作品は2016年に制作しました。<br>
+制作時間は約20時間です。<br>
+デザイナー2人とコーダー2人で制作しました。
+</p>
+</div>
+<div id="work03" class="work">
+<a href="http://www01.do-johodai.ac.jp/wdc/workshop/iWDC2016_workshop/G1/" target="_blank"><img src="images/img2.jpg" alt="タイコラボの写真"></a>
+<p>
+この作品は2016年に制作しました。<br>
+制作時間は約20時間です。<br>
+デザイナー2人とコーダー2人で制作しました。
+</p>
+</div> -->
+    <script>
+      $(document).ready(function() {
+        $('body').fadeIn(2000);
+      }
+                       );
+    </script>
+    <script>
+      $(function() {
+        $('.list-mv07').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+          if(isInView){
+            $(this).stop().addClass('mv07');
+          }
+          else{
+            $(this).stop().removeClass('mv07');
+          }
+        }
+                          );
+      }
+       );
+    </script>
+    <script>
+$(function() {
+    $('.navToggle').click(function() {
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+    </script>
+  </body>
+</html>
